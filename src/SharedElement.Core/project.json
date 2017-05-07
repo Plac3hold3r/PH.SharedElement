@@ -1,0 +1,12 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "MvvmCross": "4.4.0",
+    "MvvmCross.CodeAnalysis": "4.4.0"
+  },
+  "frameworks": {
+    ".NETPortable,Version=v4.5,Profile=Profile111": {
+      "imports": "portable-net45+win8+wpa81"
+    }
+  }
+}

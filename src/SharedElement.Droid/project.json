@@ -1,0 +1,16 @@
+﻿{
+  "dependencies": {
+    "MvvmCross": "4.4.0",
+    "MvvmCross.CodeAnalysis": "4.4.0",
+    "MvvmCross.Droid.Support.Design": "4.4.0",
+    "MvvmCross.Droid.Support.Fragment": "4.4.0",
+    "MvvmCross.Droid.Support.V7.AppCompat": "4.4.0",
+    "MvvmCross.Droid.Support.V7.RecyclerView": "4.4.0",
+    "Xamarin.Android.Support.Design": "25.3.1"
+  },
+  "frameworks": {
+    "MonoAndroid,Version=v7.1": {
+      "imports": "portable-net45+win8+wpa81"
+    }
+  }
+}
