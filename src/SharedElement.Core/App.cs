@@ -1,11 +1,11 @@
 using MvvmCross.Core.ViewModels;
-using SharedElement.Core.ViewModels;
+using MvvmCross.Platform;
 
 namespace SharedElement.Core
 {
     public class App : MvxApplication
     {
         public override void Initialize()
-            => RegisterAppStart<ListViewModel>();
+            => RegisterAppStart(Mvx.IocConstruct<AppStart>());
     }
 }
