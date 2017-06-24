@@ -1,11 +1,11 @@
 ﻿{
   "dependencies": {
-    "MvvmCross": "4.4.0",
-    "MvvmCross.CodeAnalysis": "4.4.0",
-    "MvvmCross.Droid.Support.Design": "4.4.0",
-    "MvvmCross.Droid.Support.Fragment": "4.4.0",
-    "MvvmCross.Droid.Support.V7.AppCompat": "4.4.0",
-    "MvvmCross.Droid.Support.V7.RecyclerView": "4.4.0",
+    "MvvmCross": "5.0.4",
+    "MvvmCross.CodeAnalysis": "5.0.4",
+    "MvvmCross.Droid.Support.Design": "5.0.4",
+    "MvvmCross.Droid.Support.Fragment": "5.0.4",
+    "MvvmCross.Droid.Support.V7.AppCompat": "5.0.4",
+    "MvvmCross.Droid.Support.V7.RecyclerView": "5.0.4",
     "Xamarin.Android.Support.Design": "25.3.1"
   },
   "frameworks": {
