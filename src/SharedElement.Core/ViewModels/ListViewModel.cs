@@ -1,4 +1,5 @@
-﻿using MvvmCross.Core.ViewModels;
+﻿using MvvmCross.Core.Navigation;
+using MvvmCross.Core.ViewModels;
 using SharedElement.Core.Navigation;
 using SharedElement.Core.Utils;
 
@@ -6,6 +7,13 @@ namespace SharedElement.Core.ViewModels
 {
     public class ListViewModel : MvxViewModel
     {
+        private readonly IMvxNavigationService _navigationService;
+
+        public ListViewModel(IMvxNavigationService navigationService)
+        {
+            _navigationService = navigationService;
+        }
+
         public override void Start()
         {
             Items = new MvxObservableCollection<ListItemViewModel>
@@ -43,8 +51,8 @@ namespace SharedElement.Core.ViewModels
         {
             SelectedItem = item;
 
-            ShowViewModel<DetailsViewModel>(
-                parameterValuesObject: GoToDetailsParameters.Create(SelectedItem.Title),
+            _navigationService.Navigate<DetailsViewModel, GoToDetailsParameters>(
+                param: GoToDetailsParameters.Create(SelectedItem.Title),
                 presentationBundle: MvxBundleUtils.CreateTransitionPresentationBundle(transitionImageTag, transitionTextTag));
         }
     }

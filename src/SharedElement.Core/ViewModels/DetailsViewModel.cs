@@ -1,13 +1,16 @@
 ﻿using MvvmCross.Core.ViewModels;
 using SharedElement.Core.Navigation;
+using System.Threading.Tasks;
 
 namespace SharedElement.Core.ViewModels
 {
-    public class DetailsViewModel : MvxViewModel
+    public class DetailsViewModel : MvxViewModel<GoToDetailsParameters>
     {
-        public void Init(GoToDetailsParameters parameters)
+        public override Task Initialize(GoToDetailsParameters parameter)
         {
-            Title = parameters.Title;
+            Title = parameter.Title;
+
+            return Task.FromResult(true);
         }
 
         private string _title;

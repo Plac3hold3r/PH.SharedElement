@@ -9,7 +9,9 @@ namespace SharedElement.Core
         private readonly IMvxNavigationService _navigationService;
 
         public AppStart(IMvxNavigationService navigationService)
-            => _navigationService = navigationService;
+        {
+            _navigationService = navigationService;
+        }
 
         public void Start(object hint = null)
             => _navigationService.Navigate<ListViewModel>().GetAwaiter().GetResult();
