@@ -8,8 +8,8 @@
     <ProjectGuid>{C23A254A-EEC5-4BD7-B1F6-D01060BAC88B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SharedElement.Core</RootNamespace>
-    <AssemblyName>SharedElement.Core</AssemblyName>
+    <RootNamespace>Placeholder.SharedElement.Core</RootNamespace>
+    <AssemblyName>Placeholder.SharedElement.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>

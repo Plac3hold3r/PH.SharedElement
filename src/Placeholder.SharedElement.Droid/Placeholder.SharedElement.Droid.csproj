@@ -8,7 +8,7 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SharedElement.Droid</RootNamespace>
+    <RootNamespace>Placeholder.SharedElement.Droid</RootNamespace>
     <AssemblyName>SharedElement.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
@@ -90,7 +90,7 @@
     <None Include="project.json" />
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
-  <ItemGroup> 
+  <ItemGroup>
     <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\values\dimens.xml" />
     <AndroidResource Include="Resources\values\strings.xml" />
