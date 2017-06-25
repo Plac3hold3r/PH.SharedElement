@@ -18,7 +18,7 @@ namespace Placeholder.SharedElement.Droid.Adapters
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             var itemBindingContext = new MvxAndroidBindingContext(parent.Context, BindingContext.LayoutInflaterHolder);
-            var view = InflateViewForHolder(parent, viewType, itemBindingContext);
+            View view = InflateViewForHolder(parent, viewType, itemBindingContext);
 
             return new SelectedItemViewHolder(view, itemBindingContext, OnClick)
             {
@@ -28,8 +28,6 @@ namespace Placeholder.SharedElement.Droid.Adapters
         }
 
         private void OnClick(int position, View view, object dataContext)
-        {
-            OnItemClick?.Invoke(this, new SelectedItemEventArgs(position, view, dataContext));
-        }
+            => OnItemClick?.Invoke(this, new SelectedItemEventArgs(position, view, dataContext));
     }
 }

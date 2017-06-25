@@ -9,7 +9,7 @@ namespace Placeholder.SharedElement.Droid.Adapters
     {
         public class SelectedItemViewHolder : MvxRecyclerViewHolder
         {
-            readonly Action<int, View, object> _listener;
+            private readonly Action<int, View, object> _listener;
 
             public SelectedItemViewHolder(View itemView, IMvxAndroidBindingContext context, Action<int, View, object> listener)
                 : base(itemView, context)
@@ -19,9 +19,7 @@ namespace Placeholder.SharedElement.Droid.Adapters
             }
 
             private void ItemView_Click(object sender, EventArgs e)
-            {
-                _listener(AdapterPosition, ItemView, DataContext);
-            }
+                => _listener(AdapterPosition, ItemView, DataContext);
 
             protected override void Dispose(bool disposing)
             {
