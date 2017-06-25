@@ -1,3 +1,4 @@
+using Android.App;
 using Android.Content;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Support.V7.AppCompat;
@@ -6,6 +7,12 @@ using Placeholder.SharedElement.Core;
 using Placeholder.SharedElement.Droid.Views;
 using System.Collections.Generic;
 using System.Reflection;
+
+#if DEBUG
+[assembly: Application(Debuggable = true, Label = "@string/app_name", Description = "@string/app_description")]
+#else
+[assembly: Application(Debuggable = false, Label = "@string/app_name", Description = "@string/app_description")]
+#endif
 
 namespace Placeholder.SharedElement.Droid
 {

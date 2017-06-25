@@ -18,6 +18,7 @@ namespace Placeholder.SharedElement.Droid.Views
             SetContentView(Resource.Layout.activity_details);
             SetSupportActionBar(FindViewById<Toolbar>(Resource.Id.toolbar));
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SetTitle(Resource.String.app_project_name);
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
