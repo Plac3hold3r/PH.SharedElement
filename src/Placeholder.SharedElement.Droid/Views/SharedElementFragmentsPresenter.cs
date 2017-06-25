@@ -6,12 +6,12 @@ using Android.Views;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Shared.Presenter;
 using MvvmCross.Platform;
-using SharedElement.Core;
-using SharedElement.Droid.Extensions;
+using Placeholder.SharedElement.Core;
+using Placeholder.SharedElement.Droid.Extensions;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace SharedElement.Droid.Views
+namespace Placeholder.SharedElement.Droid.Views
 {
     public class SharedElementFragmentsPresenter : MvxFragmentsPresenter
     {

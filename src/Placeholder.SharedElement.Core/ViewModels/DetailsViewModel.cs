@@ -1,8 +1,8 @@
 ﻿using MvvmCross.Core.ViewModels;
-using SharedElement.Core.Navigation;
+using Placeholder.SharedElement.Core.Navigation;
 using System.Threading.Tasks;
 
-namespace SharedElement.Core.ViewModels
+namespace Placeholder.SharedElement.Core.ViewModels
 {
     public class DetailsViewModel : MvxViewModel<GoToDetailsParameters>
     {

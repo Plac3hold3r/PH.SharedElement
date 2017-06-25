@@ -2,9 +2,9 @@
 using Android.OS;
 using Android.Support.V7.Widget;
 using MvvmCross.Droid.Support.V7.AppCompat;
-using SharedElement.Core.ViewModels;
+using Placeholder.SharedElement.Core.ViewModels;
 
-namespace SharedElement.Droid.Views
+namespace Placeholder.SharedElement.Droid.Views
 {
     [Activity(
         Theme = "@style/AppTheme",

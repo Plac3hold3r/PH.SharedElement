@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.sharedelement.droid" android:versionCode="1" android:versionName="1.0">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.Placeholder.SharedElement" android:versionCode="1" android:versionName="1.0">
 	<uses-sdk android:minSdkVersion="19" />
-	<application android:label="SharedElement" android:theme="@style/Theme.AppCompat.Light" android:icon="@drawable/mvvmcross_logo"></application>
+	<application android:label="Shared Element" android:theme="@style/Theme.AppCompat.Light" android:icon="@drawable/mvvmcross_logo"></application>
 </manifest>

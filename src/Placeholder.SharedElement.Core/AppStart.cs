@@ -1,8 +1,8 @@
 ﻿using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
-using SharedElement.Core.ViewModels;
+using Placeholder.SharedElement.Core.ViewModels;
 
-namespace SharedElement.Core
+namespace Placeholder.SharedElement.Core
 {
     public class AppStart : IMvxAppStart
     {

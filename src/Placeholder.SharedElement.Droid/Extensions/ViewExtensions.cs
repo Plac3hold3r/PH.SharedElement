@@ -1,7 +1,7 @@
 ﻿using Android.OS;
 using Android.Views;
 
-namespace SharedElement.Droid.Extensions
+namespace Placeholder.SharedElement.Droid.Extensions
 {
     public static class ViewExtensions
     {

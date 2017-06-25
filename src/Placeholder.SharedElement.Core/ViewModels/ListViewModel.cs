@@ -1,9 +1,9 @@
 ﻿using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
-using SharedElement.Core.Navigation;
-using SharedElement.Core.Utils;
+using Placeholder.SharedElement.Core.Navigation;
+using Placeholder.SharedElement.Core.Utils;
 
-namespace SharedElement.Core.ViewModels
+namespace Placeholder.SharedElement.Core.ViewModels
 {
     public class ListViewModel : MvxViewModel
     {

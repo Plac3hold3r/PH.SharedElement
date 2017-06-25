@@ -3,12 +3,12 @@ using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Support.V7.AppCompat;
 using MvvmCross.Droid.Views;
 using MvvmCross.Platform;
-using SharedElement.Core;
-using SharedElement.Droid.Views;
+using Placeholder.SharedElement.Core;
+using Placeholder.SharedElement.Droid.Views;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace SharedElement.Droid
+namespace Placeholder.SharedElement.Droid
 {
     public class Setup : MvxAppCompatSetup
     {

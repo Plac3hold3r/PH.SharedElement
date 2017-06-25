@@ -4,7 +4,7 @@ using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V7.RecyclerView;
 using System;
 
-namespace SharedElement.Droid.Adapters
+namespace Placeholder.SharedElement.Droid.Adapters
 {
     public partial class SelectedItemRecyclerAdapter : MvxRecyclerAdapter
     {
