@@ -54,9 +54,18 @@ namespace Placeholder.SharedElement.Core.ViewModels
         {
             SelectedItem = item;
 
-            _navigationService.Navigate<DetailsViewModel, GoToDetailsParameters>(
-                param: GoToDetailsParameters.Create(SelectedItem.Title),
-                presentationBundle: MvxBundleUtils.CreateTransitionPresentationBundle(transitionImageTag, transitionTextTag));
+            if (item.Id % 2 == 0)
+            {
+                _navigationService.Navigate<DetailsViewModel, GoToDetailsParameters>(
+                    param: GoToDetailsParameters.Create(SelectedItem.Title),
+                    presentationBundle: MvxBundleUtils.CreateTransitionPresentationBundle(transitionImageTag, transitionTextTag));
+            }
+            else
+            {
+                _navigationService.Navigate<DetailFragmentViewModel, GoToDetailsParameters>(
+                    param: GoToDetailsParameters.Create(SelectedItem.Title),
+                    presentationBundle: MvxBundleUtils.CreateTransitionPresentationBundle(transitionImageTag, transitionTextTag));
+            }
         }
     }
 }

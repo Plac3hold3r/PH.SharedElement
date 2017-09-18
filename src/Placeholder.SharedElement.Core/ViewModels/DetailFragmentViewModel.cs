@@ -4,7 +4,7 @@ using Placeholder.SharedElement.Core.Navigation;
 
 namespace Placeholder.SharedElement.Core.ViewModels
 {
-    public class DetailsViewModel : MvxViewModel<GoToDetailsParameters>
+    public class DetailFragmentViewModel : MvxViewModel<GoToDetailsParameters>
     {
         public override Task Initialize(GoToDetailsParameters parameter)
         {
