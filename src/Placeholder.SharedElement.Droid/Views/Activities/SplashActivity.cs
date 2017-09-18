@@ -15,7 +15,7 @@ namespace Placeholder.SharedElement.Droid.Views
         Name = DroidConstants.SharedElement_Views_Namespace + nameof(SplashActivity))]
     public class SplashActivity : MvxSplashScreenActivity
     {
-        public SplashActivity() : base(Resource.Layout.splash_screen)
+        public SplashActivity() : base(Resource.Layout.activity_splash_screen)
         {
         }
     }

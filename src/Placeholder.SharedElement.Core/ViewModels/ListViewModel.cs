@@ -1,4 +1,5 @@
-﻿using MvvmCross.Core.Navigation;
+﻿using System.Threading.Tasks;
+using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 using Placeholder.SharedElement.Core.Navigation;
 using Placeholder.SharedElement.Core.Utils;
@@ -14,16 +15,18 @@ namespace Placeholder.SharedElement.Core.ViewModels
             _navigationService = navigationService;
         }
 
-        public override void Start()
+        public override Task Initialize()
         {
             Items = new MvxObservableCollection<ListItemViewModel>
             {
-                new ListItemViewModel { Title = "title one" },
-                new ListItemViewModel { Title = "title two" },
-                new ListItemViewModel { Title = "title three" },
-                new ListItemViewModel { Title = "title four" },
-                new ListItemViewModel { Title = "title five" }
+                new ListItemViewModel { Id = 1, Title = "title one" },
+                new ListItemViewModel { Id = 2, Title = "title two" },
+                new ListItemViewModel { Id = 3, Title = "title three" },
+                new ListItemViewModel { Id = 4, Title = "title four" },
+                new ListItemViewModel { Id = 5, Title = "title five" }
             };
+
+            return base.Initialize();
         }
 
         private MvxObservableCollection<ListItemViewModel> _items;
