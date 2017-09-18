@@ -63,7 +63,6 @@
     <Compile Include="Adapters\SelectedItemRecyclerAdapter.SelectedItemEventArgs.cs" />
     <Compile Include="Adapters\SelectedItemRecyclerAdapter.ViewHolder.cs" />
     <Compile Include="DroidConstants.cs" />
-    <Compile Include="Extensions\ViewExtensions.cs" />
     <Compile Include="Views\Activities\DetailsActivity.cs" />
     <Compile Include="Views\Activities\MainActivity.cs" />
     <Compile Include="Views\Activities\SplashActivity.cs" />

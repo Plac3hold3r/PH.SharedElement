@@ -50,7 +50,7 @@ namespace Placeholder.SharedElement.Core.ViewModels
             set => SetProperty(ref _isRefreshing, value);
         }
 
-        public void SelectItemExecution(ListItemViewModel item, string transitionImageTag, string transitionTextTag)
+        public void SelectItemExecution(ListItemViewModel item, params string[] transitionsTags)
         {
             SelectedItem = item;
 
@@ -58,13 +58,13 @@ namespace Placeholder.SharedElement.Core.ViewModels
             {
                 _navigationService.Navigate<DetailsViewModel, GoToDetailsParameters>(
                     param: GoToDetailsParameters.Create(SelectedItem.Title),
-                    presentationBundle: MvxBundleUtils.CreateTransitionPresentationBundle(transitionImageTag, transitionTextTag));
+                    presentationBundle: MvxBundleUtils.CreateTransitionPresentationBundle(transitionsTags));
             }
             else
             {
                 _navigationService.Navigate<DetailFragmentViewModel, GoToDetailsParameters>(
                     param: GoToDetailsParameters.Create(SelectedItem.Title),
-                    presentationBundle: MvxBundleUtils.CreateTransitionPresentationBundle(transitionImageTag, transitionTextTag));
+                    presentationBundle: MvxBundleUtils.CreateTransitionPresentationBundle(transitionsTags));
             }
         }
     }

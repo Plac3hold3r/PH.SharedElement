@@ -1,6 +1,7 @@
 ﻿using Android.OS;
 using Android.Runtime;
 using Android.Support.V7.App;
+using Android.Transitions;
 using Android.Views;
 using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Shared.Attributes;
@@ -13,6 +14,14 @@ namespace Placeholder.SharedElement.Droid.Views
     [Register(DroidConstants.SharedElement_Views_Namespace + nameof(DetailFragment))]
     public class DetailFragment : MvxFragment<DetailFragmentViewModel>
     {
+        public override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+
+            if (Build.VERSION.SdkInt >= BuildVersionCodes.Lollipop)
+                SharedElementEnterTransition = TransitionInflater.From(Activity).InflateTransition(Android.Resource.Transition.Move);
+        }
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             HasOptionsMenu = true;

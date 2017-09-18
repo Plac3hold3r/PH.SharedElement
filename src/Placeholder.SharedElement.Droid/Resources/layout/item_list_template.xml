@@ -11,8 +11,7 @@
         android:id="@+id/img_logo"
         android:layout_width="@dimen/list_icon_size"
         android:layout_height="@dimen/list_icon_size"
-        android:src="@drawable/mvvmcross_logo"
-        android:transitionName="@string/transition_list_item_icon" />
+        android:src="@drawable/mvvmcross_logo" />
 
     <TextView
         android:id="@+id/txt_name"
@@ -22,7 +21,6 @@
         android:layout_marginLeft="@dimen/margin_medium"
         android:layout_toRightOf="@id/img_logo"
         android:gravity="center_vertical"
-        android:transitionName="@string/transition_list_item_name"
         app:MvxBind="Text Title"
         tools:text="Item 1" />
 

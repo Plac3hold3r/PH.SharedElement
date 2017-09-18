@@ -1,15 +1,15 @@
-﻿using Android.App;
+﻿using System.Collections.Generic;
+using System.Reflection;
+using Android.App;
 using Android.Content;
 using Android.Support.V4.App;
 using Android.Support.V4.Util;
+using Android.Support.V4.View;
 using Android.Views;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Shared.Presenter;
 using MvvmCross.Platform;
 using Placeholder.SharedElement.Core;
-using Placeholder.SharedElement.Droid.Extensions;
-using System.Collections.Generic;
-using System.Reflection;
 
 namespace Placeholder.SharedElement.Droid.Views
 {
@@ -49,7 +49,7 @@ namespace Placeholder.SharedElement.Droid.Views
                         }
                         control.Tag = null;
 
-                        var transitionName = control.GetTransitionNameSupport();
+                        var transitionName = ViewCompat.GetTransitionName(control);
                         if (string.IsNullOrEmpty(transitionName))
                         {
                             Mvx.Warning($"A XML {nameof(transitionName)} is required in order to transition a control when navigating.");
