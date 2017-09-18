@@ -136,8 +136,8 @@ namespace Placeholder.SharedElement.Droid.Views
             }
 
             OnFragmentChanging(fragInfo, ft);
-            ft.CommitAllowingStateLoss();
-            //SupportFragmentManager.ExecutePendingTransactions();
+            ft.Commit();
+            SupportFragmentManager.ExecutePendingTransactions();
             OnFragmentChanged(fragInfo);
         }
     }

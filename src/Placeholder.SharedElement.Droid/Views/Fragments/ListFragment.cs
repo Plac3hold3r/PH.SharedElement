@@ -50,11 +50,11 @@ namespace Placeholder.SharedElement.Droid.Views
             Toast.MakeText(Activity, $"Selected item {e.Position + 1}", ToastLength.Short)
                 .Show();
 
-            var itemLogo = e.View.FindViewById<ImageView>(Resource.Id.img_logo);
+            ImageView itemLogo = e.View.FindViewById<ImageView>(Resource.Id.img_logo);
             itemLogo.Tag = DroidConstants.Transform_Animate_Image_Tag;
             ViewCompat.SetTransitionName(itemLogo, Resources.GetString(Resource.String.transition_list_item_icon));
 
-            var itemName = e.View.FindViewById<TextView>(Resource.Id.txt_name);
+            TextView itemName = e.View.FindViewById<TextView>(Resource.Id.txt_name);
             itemName.Tag = DroidConstants.Transform_Animate_Text_Tag;
             ViewCompat.SetTransitionName(itemName, Resources.GetString(Resource.String.transition_list_item_name));
 

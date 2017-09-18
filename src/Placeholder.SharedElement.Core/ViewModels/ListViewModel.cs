@@ -19,11 +19,11 @@ namespace Placeholder.SharedElement.Core.ViewModels
         {
             Items = new MvxObservableCollection<ListItemViewModel>
             {
-                new ListItemViewModel { Id = 1, Title = "title one" },
-                new ListItemViewModel { Id = 2, Title = "title two" },
-                new ListItemViewModel { Id = 3, Title = "title three" },
-                new ListItemViewModel { Id = 4, Title = "title four" },
-                new ListItemViewModel { Id = 5, Title = "title five" }
+                new ListItemViewModel { Id = 1, Title = "title one Fragment" },
+                new ListItemViewModel { Id = 2, Title = "title two Activity" },
+                new ListItemViewModel { Id = 3, Title = "title three Fragment" },
+                new ListItemViewModel { Id = 4, Title = "title four Activity" },
+                new ListItemViewModel { Id = 5, Title = "title five Fragment" }
             };
 
             return base.Initialize();
