@@ -1,5 +1,6 @@
 ﻿using Android.OS;
 using Android.Runtime;
+using Android.Support.V7.App;
 using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
@@ -35,6 +36,12 @@ namespace Placeholder.SharedElement.Droid.Views
             }
 
             return view;
+        }
+
+        public override void OnResume()
+        {
+            base.OnResume();
+            (Activity as AppCompatActivity)?.SupportActionBar.SetDisplayHomeAsUpEnabled(false);
         }
 
         private void Adapter_OnItemClick(object sender, SelectedItemRecyclerAdapter.SelectedItemEventArgs e)
