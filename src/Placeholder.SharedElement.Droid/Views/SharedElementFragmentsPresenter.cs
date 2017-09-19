@@ -33,10 +33,11 @@ namespace Placeholder.SharedElement.Droid.Views
             if ((request.PresentationValues?.ContainsKey(SharedConstants.Animate_Tag) ?? false)
                 && request.PresentationValues.TryGetValue(SharedConstants.Animate_Tag, out var controlTags))
             {
-                Pair[] GetTransitionControls(string tags)
+                (List<string> Elements, Pair[] Pairs) GetTransitionControls(string tags)
                 {
                     string[] tagArray = tags.Split('|');
                     var transitionElementPairs = new List<Pair>();
+                    var elements = new List<string>();
 
                     foreach (var tag in tagArray)
                     {
@@ -57,21 +58,23 @@ namespace Placeholder.SharedElement.Droid.Views
                         }
 
                         transitionElementPairs.Add(Pair.Create(control, transitionName));
+                        elements.Add($"{tag}:{transitionName}");
                     }
 
-                    return transitionElementPairs.ToArray();
+                    return (elements, transitionElementPairs.ToArray());
                 }
 
-                Pair[] controlTransitionNamePairs = GetTransitionControls(controlTags);
+                (List<string> Elements, Pair[] Pairs) controlTransitionNamePairs = GetTransitionControls(controlTags);
 
-                if (controlTransitionNamePairs.Length == 0)
+                if (controlTransitionNamePairs.Pairs.Length == 0)
                 {
                     Mvx.Warning("No transition elements found, navigating via base MvvmCross navigation.");
                     return false;
                 }
 
-                var activityOptions = ActivityOptionsCompat.MakeSceneTransitionAnimation(Activity, controlTransitionNamePairs);
+                var activityOptions = ActivityOptionsCompat.MakeSceneTransitionAnimation(Activity, controlTransitionNamePairs.Pairs);
                 Intent intent = CreateIntentForRequest(request);
+                intent.PutExtra(DroidConstants.Transition_Name_Key, string.Join("|", controlTransitionNamePairs.Elements));
 
                 Activity.StartActivity(intent, activityOptions.ToBundle());
                 return true;

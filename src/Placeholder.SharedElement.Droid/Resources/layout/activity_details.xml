@@ -22,7 +22,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/margin_medium"
             android:src="@drawable/mvvmcross_logo"
-            android:transitionName="@string/transition_list_item_icon" />
+            android:tag="@string/transition_list_item_icon" />
 
         <TextView
             android:id="@+id/txt_name"
@@ -34,7 +34,7 @@
             android:textColor="@color/colorPrimaryDark"
             android:textSize="@dimen/text_very_huge"
             android:textStyle="bold"
-            android:transitionName="@string/transition_list_item_name"
+            android:tag="@string/transition_list_item_name"
             app:MvxBind="Text Title"
             tools:text="Item 1" />
 
