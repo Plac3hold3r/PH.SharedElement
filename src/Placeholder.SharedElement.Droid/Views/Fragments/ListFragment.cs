@@ -1,6 +1,5 @@
 ﻿using Android.OS;
 using Android.Runtime;
-using Android.Support.V4.View;
 using Android.Support.V7.App;
 using Android.Support.V7.Widget;
 using Android.Views;
@@ -51,12 +50,10 @@ namespace Placeholder.SharedElement.Droid.Views
                 .Show();
 
             ImageView itemLogo = e.View.FindViewById<ImageView>(Resource.Id.img_logo);
-            itemLogo.Tag = DroidConstants.Transform_Animate_Image_Tag;
-            ViewCompat.SetTransitionName(itemLogo, Resources.GetString(Resource.String.transition_list_item_icon));
+            itemLogo.Tag = Activity.Resources.GetString(Resource.String.transition_list_item_icon);
 
             TextView itemName = e.View.FindViewById<TextView>(Resource.Id.txt_name);
-            itemName.Tag = DroidConstants.Transform_Animate_Text_Tag;
-            ViewCompat.SetTransitionName(itemName, Resources.GetString(Resource.String.transition_list_item_name));
+            itemName.Tag = Activity.Resources.GetString(Resource.String.transition_list_item_name);
 
             ViewModel.SelectItemExecution(e.DataContext as ListItemViewModel, itemLogo.Tag.ToString(), itemName.Tag.ToString());
         }

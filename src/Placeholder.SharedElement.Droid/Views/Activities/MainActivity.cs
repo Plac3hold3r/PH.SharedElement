@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Android.OS;
 using Android.Support.V4.App;
 using Android.Support.V4.View;
@@ -96,6 +97,8 @@ namespace Placeholder.SharedElement.Droid.Views
 
             if (!string.IsNullOrEmpty(controlTags))
             {
+                var elements = new List<string>();
+
                 foreach (var controlTag in controlTags.Split('|'))
                 {
                     View control = FindViewById(Android.Resource.Id.Content).FindViewWithTag(controlTag);
@@ -115,7 +118,10 @@ namespace Placeholder.SharedElement.Droid.Views
                     }
 
                     ft.AddSharedElement(control, transitionName);
+                    elements.Add($"{controlTag}:{transitionName}");
                 }
+
+                (fragInfo.CachedFragment as Fragment)?.Arguments.PutString(DroidConstants.Transition_Name_Key, string.Join("|", elements));
             }
 
             currentFragment = fragInfo.CachedFragment as Fragment;

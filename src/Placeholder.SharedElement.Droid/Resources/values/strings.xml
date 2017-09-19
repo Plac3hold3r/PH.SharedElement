@@ -10,7 +10,7 @@
     <!--
         Transitions
     -->
-    <string name="transition_list_item_icon">mvx_icon</string>
-    <string name="transition_list_item_name">mvx_name</string>
+    <string name="transition_list_item_icon">anim_image</string>
+    <string name="transition_list_item_name">anim_text</string>
 
 </resources>
