@@ -2,7 +2,6 @@
 using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 using SharedElement.Official.Core.Navigation;
-using SharedElement.Official.Core.Utils;
 
 namespace SharedElement.Official.Core.ViewModels
 {
@@ -50,21 +49,17 @@ namespace SharedElement.Official.Core.ViewModels
             set => SetProperty(ref _isRefreshing, value);
         }
 
-        public void SelectItemExecution(ListItemViewModel item, params string[] transitionsTags)
+        public void SelectItemExecution(ListItemViewModel item)
         {
             SelectedItem = item;
 
             if (item.Id % 2 == 0)
             {
-                _navigationService.Navigate<DetailsViewModel, GoToDetailsParameters>(
-                    param: GoToDetailsParameters.Create(SelectedItem.Title),
-                    presentationBundle: MvxBundleUtils.CreateTransitionPresentationBundle(transitionsTags));
+                _navigationService.Navigate<DetailsViewModel, GoToDetailsParameters>(GoToDetailsParameters.Create(SelectedItem.Title));
             }
             else
             {
-                _navigationService.Navigate<DetailFragmentViewModel, GoToDetailsParameters>(
-                    param: GoToDetailsParameters.Create(SelectedItem.Title),
-                    presentationBundle: MvxBundleUtils.CreateTransitionPresentationBundle(transitionsTags));
+                _navigationService.Navigate<DetailFragmentViewModel, GoToDetailsParameters>(GoToDetailsParameters.Create(SelectedItem.Title));
             }
         }
     }
