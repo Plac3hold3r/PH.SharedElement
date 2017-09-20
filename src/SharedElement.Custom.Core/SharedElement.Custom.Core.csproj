@@ -34,7 +34,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="AppStart.cs" />
     <Compile Include="Navigation\GoToDetailsParameters.cs" />
     <Compile Include="SharedConstants.cs" />
     <Compile Include="Utils\MvxBundleUtils.cs" />
