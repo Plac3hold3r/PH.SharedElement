@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Placeholder.SharedElement.Droid", "src\Placeholder.SharedElement.Droid\Placeholder.SharedElement.Droid.csproj", "{2AC48CC7-2058-46D1-A2C9-BA85F0461FC3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedElement.Custom.Droid", "src\SharedElement.Custom.Droid\SharedElement.Custom.Droid.csproj", "{2AC48CC7-2058-46D1-A2C9-BA85F0461FC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Placeholder.SharedElement.Core", "src\Placeholder.SharedElement.Core\Placeholder.SharedElement.Core.csproj", "{C23A254A-EEC5-4BD7-B1F6-D01060BAC88B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedElement.Custom.Core", "src\SharedElement.Custom.Core\SharedElement.Custom.Core.csproj", "{C23A254A-EEC5-4BD7-B1F6-D01060BAC88B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!Solution Items", "!Solution Items", "{F9019D9D-8FA1-4C49-9E51-D39B0C8BEBC6}"
 	ProjectSection(SolutionItems) = preProject
