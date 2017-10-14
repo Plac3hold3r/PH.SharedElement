@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Android.OS;
+﻿using Android.OS;
 using Android.Runtime;
 using Android.Support.V7.App;
 using Android.Support.V7.Widget;
@@ -60,17 +58,7 @@ namespace SharedElement.Official.Droid.Views
             Toast.MakeText(Activity, $"Selected item {e.Position + 1}", ToastLength.Short)
                 .Show();
 
-            if (Attribute.GetCustomAttribute(GetType(), typeof(MvxFragmentPresentationAttribute)) is MvxFragmentPresentationAttribute attribute)
-            {
-                if (attribute.SharedElements == null)
-                    attribute.SharedElements = new Dictionary<string, View>();
-
-                ImageView itemLogo = e.View.FindViewById<ImageView>(Resource.Id.img_logo);
-                attribute.SharedElements.Add(Activity.Resources.GetString(Resource.String.transition_list_item_icon), itemLogo);
-
-                TextView itemName = e.View.FindViewById<TextView>(Resource.Id.txt_name);
-                attribute.SharedElements.Add(Activity.Resources.GetString(Resource.String.transition_list_item_name), itemName);
-            }
+            // TODO [JF] :: figure out how shared element works with v5.2
 
             ViewModel.SelectItemExecution(e.DataContext as ListItemViewModel);
         }
