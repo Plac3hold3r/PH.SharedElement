@@ -10,10 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MvvmCross" Version="5.3.0">
+    <PackageReference Include="MvvmCross" Version="5.3.1">
       <NoWarn>NU1701</NoWarn>
     </PackageReference>
-    <PackageReference Include="MvvmCross.CodeAnalysis" Version="5.3.0">
+    <PackageReference Include="MvvmCross.CodeAnalysis" Version="5.3.1">
       <NoWarn>NU1701</NoWarn>
     </PackageReference>
   </ItemGroup>
