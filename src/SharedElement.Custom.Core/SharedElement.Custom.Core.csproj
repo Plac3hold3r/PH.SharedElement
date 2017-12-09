@@ -11,6 +11,7 @@
     <PackageReference Include="MvvmCross.Binding" Version="5.1.1" NoWarn="NU1701" />
     <PackageReference Include="MvvmCross.Platform" Version="5.1.1" NoWarn="NU1701" />
     <PackageReference Include="MvvmCross.CodeAnalysis" Version="5.1.1" NoWarn="NU1701" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="6.7.0.4267" />
   </ItemGroup>
 
 </Project>
