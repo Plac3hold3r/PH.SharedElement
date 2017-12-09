@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedElement.Custom.Droid", "src\SharedElement.Custom.Droid\SharedElement.Custom.Droid.csproj", "{2AC48CC7-2058-46D1-A2C9-BA85F0461FC3}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!Solution Items", "!Solution Items", "{F9019D9D-8FA1-4C49-9E51-D39B0C8BEBC6}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -14,13 +12,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!Solution Items", "!Solutio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mvx 5.1.1 - Custom", "Mvx 5.1.1 - Custom", "{225D589C-C702-4477-BDED-8B8E2FC2CE20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedElement.Custom.Core", "src\SharedElement.Custom.Core\SharedElement.Custom.Core.csproj", "{412BDABE-4BE9-4EE3-A098-C1217BBB173E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedElement.Custom.Droid", "src\SharedElement.Custom.Droid\SharedElement.Custom.Droid.csproj", "{2AC48CC7-2058-46D1-A2C9-BA85F0461FC3}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mvx 5.5.2 - Official [WIP]", "Mvx 5.5.2 - Official [WIP]", "{AF98A4FA-5272-4271-9812-17AA5642B64E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedElement.Official.Core", "src\SharedElement.Official.Core\SharedElement.Official.Core.csproj", "{DC149EB8-9E4A-4D31-91A4-195287AF0A89}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedElement.Official.Droid", "src\SharedElement.Official.Droid\SharedElement.Official.Droid.csproj", "{2530601C-7641-4BA6-AC70-70713F78AC52}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedElement.Custom.Core", "src\SharedElement.Custom.Core\SharedElement.Custom.Core.csproj", "{412BDABE-4BE9-4EE3-A098-C1217BBB173E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
