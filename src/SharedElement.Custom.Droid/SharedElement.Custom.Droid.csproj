@@ -135,7 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharedElement.Custom.Core\SharedElement.Custom.Core.csproj">
-      <Project>{c23a254a-eec5-4bd7-b1f6-d01060bac88b}</Project>
+      <Project>{412bdabe-4be9-4ee3-a098-c1217bbb173e}</Project>
       <Name>SharedElement.Custom.Core</Name>
     </ProjectReference>
   </ItemGroup>
