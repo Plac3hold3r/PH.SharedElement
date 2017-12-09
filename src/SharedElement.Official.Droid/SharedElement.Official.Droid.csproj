@@ -75,19 +75,19 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MvvmCross">
-      <Version>5.4.2</Version>
+      <Version>5.5.2</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.CodeAnalysis">
-      <Version>5.4.2</Version>
+      <Version>5.5.2</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.Droid.Support.Design">
-      <Version>5.4.2</Version>
+      <Version>5.5.2</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.Droid.Support.V7.AppCompat">
-      <Version>5.4.2</Version>
+      <Version>5.5.2</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.Droid.Support.V7.RecyclerView">
-      <Version>5.4.2</Version>
+      <Version>5.5.2</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
