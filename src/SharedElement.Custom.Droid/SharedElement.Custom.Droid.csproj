@@ -87,7 +87,6 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="project.json" />
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +115,23 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\fragment_details.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MvvmCross">
+      <Version>5.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.CodeAnalysis">
+      <Version>5.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Droid.Support.Design">
+      <Version>5.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Droid.Support.V7.AppCompat">
+      <Version>5.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Droid.Support.V7.RecyclerView">
+      <Version>5.1.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharedElement.Custom.Core\SharedElement.Custom.Core.csproj">
