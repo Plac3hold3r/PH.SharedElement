@@ -21,18 +21,16 @@ namespace SharedElement.Official.Droid.Views
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             SetTitle(Resource.String.app_project_name);
 
-            var imageKey = Resources.GetString(Resource.String.transition_list_item_icon);
-            var nameKey = Resources.GetString(Resource.String.transition_list_item_name);
-
             Bundle extras = Intent.Extras;
-            var imageTransitionName = extras.GetString(imageKey);
-            var nameTransitionName = extras.GetString(nameKey);
+            var transitions = extras.GetString(DroidConstants.Transition_Name_Key);
 
-            View imageToAnimate = FindViewById(Android.Resource.Id.Content).FindViewWithTag(imageKey);
-            ViewCompat.SetTransitionName(imageToAnimate, imageTransitionName);
+            foreach (var transition in transitions.Split('|'))
+            {
+                string[] transitionDetails = transition.Split(':');
 
-            View nameToAnimate = FindViewById(Android.Resource.Id.Content).FindViewWithTag(nameKey);
-            ViewCompat.SetTransitionName(nameToAnimate, nameTransitionName);
+                View viewToAnimate = FindViewById(Android.Resource.Id.Content).FindViewWithTag(transitionDetails[0]);
+                ViewCompat.SetTransitionName(viewToAnimate, transitionDetails[1]);
+            }
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)

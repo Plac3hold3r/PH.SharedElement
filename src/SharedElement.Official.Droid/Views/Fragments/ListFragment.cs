@@ -5,7 +5,6 @@ using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 using MvvmCross.Binding.Droid.BindingContext;
-using MvvmCross.Core.Views;
 using MvvmCross.Droid.Support.V4;
 using MvvmCross.Droid.Support.V7.RecyclerView;
 using MvvmCross.Droid.Views.Attributes;
@@ -16,16 +15,8 @@ namespace SharedElement.Official.Droid.Views
 {
     [MvxFragmentPresentation(typeof(MainViewModel), Resource.Id.content_frame)]
     [Register(DroidConstants.SharedElement_Views_Namespace + nameof(ListFragment))]
-    public class ListFragment : MvxFragment<ListViewModel>, IMvxOverridePresentationAttribute
-    {
-        public MvxBasePresentationAttribute PresentationAttribute()
-        {
-            return new MvxFragmentPresentationAttribute(typeof(MainViewModel), Resource.Id.content_frame)
-            {
-
-            };
-        }
-
+    public class ListFragment : MvxFragment<ListViewModel>
+    { 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
@@ -58,9 +49,13 @@ namespace SharedElement.Official.Droid.Views
             Toast.MakeText(Activity, $"Selected item {e.Position + 1}", ToastLength.Short)
                 .Show();
 
-            // TODO [JF] :: figure out how shared element works with v5.2
+            ImageView itemLogo = e.View.FindViewById<ImageView>(Resource.Id.img_logo);
+            itemLogo.Tag = Activity.Resources.GetString(Resource.String.transition_list_item_icon);
 
-            ViewModel.SelectItemExecution(e.DataContext as ListItemViewModel);
+            TextView itemName = e.View.FindViewById<TextView>(Resource.Id.txt_name);
+            itemName.Tag = Activity.Resources.GetString(Resource.String.transition_list_item_name);
+
+            ViewModel.SelectItemExecution(e.DataContext as ListItemViewModel, itemLogo.Tag.ToString(), itemName.Tag.ToString());
         }
     }
 }
