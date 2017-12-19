@@ -136,7 +136,7 @@ namespace SharedElement.Official.Droid.Views
                 }
             }
 
-            var ft = fragmentManager.BeginTransaction();
+            Android.Support.V4.App.FragmentTransaction ft = fragmentManager.BeginTransaction();
 
             OnBeforeFragmentChanging(ft, fragmentView, attribute, request);
 
