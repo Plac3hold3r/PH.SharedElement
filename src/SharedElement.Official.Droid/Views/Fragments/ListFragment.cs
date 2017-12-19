@@ -5,7 +5,6 @@ using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 using MvvmCross.Binding.Droid.BindingContext;
-using MvvmCross.Core.Views;
 using MvvmCross.Droid.Support.V4;
 using MvvmCross.Droid.Support.V7.RecyclerView;
 using MvvmCross.Droid.Views.Attributes;
@@ -16,16 +15,8 @@ namespace SharedElement.Official.Droid.Views
 {
     [MvxFragmentPresentation(typeof(MainViewModel), Resource.Id.content_frame)]
     [Register(DroidConstants.SharedElement_Views_Namespace + nameof(ListFragment))]
-    public class ListFragment : MvxFragment<ListViewModel>, IMvxOverridePresentationAttribute
+    public class ListFragment : MvxFragment<ListViewModel>
     {
-        public MvxBasePresentationAttribute PresentationAttribute()
-        {
-            return new MvxFragmentPresentationAttribute(typeof(MainViewModel), Resource.Id.content_frame)
-            {
-
-            };
-        }
-
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
