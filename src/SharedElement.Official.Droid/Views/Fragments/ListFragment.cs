@@ -49,7 +49,11 @@ namespace SharedElement.Official.Droid.Views
             Toast.MakeText(Activity, $"Selected item {e.Position + 1}", ToastLength.Short)
                 .Show();
 
-            // TODO [JF] :: figure out how shared element works with v5.2
+            ImageView itemLogo = e.View.FindViewById<ImageView>(Resource.Id.img_logo);
+            itemLogo.Tag = Activity.Resources.GetString(Resource.String.transition_list_item_icon);
+
+            TextView itemName = e.View.FindViewById<TextView>(Resource.Id.txt_name);
+            itemName.Tag = Activity.Resources.GetString(Resource.String.transition_list_item_name);
 
             ViewModel.SelectItemExecution(e.DataContext as ListItemViewModel);
         }

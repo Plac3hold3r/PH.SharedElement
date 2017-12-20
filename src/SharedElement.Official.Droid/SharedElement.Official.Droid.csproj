@@ -66,6 +66,8 @@
     <Compile Include="Views\Activities\SplashActivity.cs" />
     <Compile Include="Views\Fragments\DetailFragment.cs" />
     <Compile Include="Views\Fragments\ListFragment.cs" />
+    <Compile Include="Views\Interfaces\IMvxAndroidSharedElements.cs" />
+    <Compile Include="Views\SharedElementCompatViewPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
