@@ -69,7 +69,7 @@ namespace SharedElement.Official.Droid.Views
 
             var ft = fragmentManager.BeginTransaction();
 
-            OnBeforeFragmentChanging(ft, fragmentView, attribute);
+            OnBeforeFragmentChanging(ft, fragmentView, attribute, request);
 
             if (attribute.AddToBackStack == true)
                 ft.AddToBackStack(fragmentName);

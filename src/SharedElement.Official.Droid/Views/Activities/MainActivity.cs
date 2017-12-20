@@ -19,18 +19,29 @@ namespace SharedElement.Official.Droid.Views
         {
             IDictionary<string, View> sharedElements = new Dictionary<string, View>();
 
-            sharedElements.Add(CreateSharedElementPair(Resource.String.transition_list_item_icon));
-            sharedElements.Add(CreateSharedElementPair(Resource.String.transition_list_item_name));
+
+            KeyValuePair<string, View>? iconAnim = CreateSharedElementPair(Resource.String.transition_list_item_icon);
+            if (iconAnim != null)
+                sharedElements.Add(iconAnim.GetValueOrDefault());
+
+            KeyValuePair<string, View>? nameAnim = CreateSharedElementPair(Resource.String.transition_list_item_name);
+            if (nameAnim != null)
+                sharedElements.Add(nameAnim.GetValueOrDefault());
 
             return sharedElements;
         }
 
-        private KeyValuePair<string, View> CreateSharedElementPair(int tagStringResourceId)
+        private KeyValuePair<string, View>? CreateSharedElementPair(int tagStringResourceId)
         {
             var controlTag = Resources.GetString(tagStringResourceId);
             View control = FindViewById(Android.Resource.Id.Content).FindViewWithTag(controlTag);
-            control.Tag = null;
-            return new KeyValuePair<string, View>(controlTag, control);
+            if (control != null)
+            {
+                control.Tag = null;
+                return new KeyValuePair<string, View>(controlTag, control);
+            }
+
+            return null;
         }
 
         protected override void OnCreate(Bundle bundle)
