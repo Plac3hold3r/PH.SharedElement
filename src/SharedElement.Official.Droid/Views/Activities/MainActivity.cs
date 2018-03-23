@@ -19,7 +19,6 @@ namespace SharedElement.Official.Droid.Views
         {
             IDictionary<string, View> sharedElements = new Dictionary<string, View>();
 
-
             KeyValuePair<string, View>? iconAnim = CreateSharedElementPair(Resource.String.transition_list_item_icon);
             if (iconAnim != null)
                 sharedElements.Add(iconAnim.GetValueOrDefault());
