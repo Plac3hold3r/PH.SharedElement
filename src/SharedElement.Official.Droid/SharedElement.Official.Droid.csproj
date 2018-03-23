@@ -76,22 +76,22 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MvvmCross">
-      <Version>5.6.2</Version>
+      <Version>5.7.0</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.CodeAnalysis">
-      <Version>5.6.2</Version>
+      <Version>5.7.0</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.Droid.Support.Design">
-      <Version>5.6.2</Version>
+      <Version>5.7.0</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.Droid.Support.V7.AppCompat">
-      <Version>5.6.2</Version>
+      <Version>5.7.0</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.Droid.Support.V7.RecyclerView">
-      <Version>5.6.2</Version>
+      <Version>5.7.0</Version>
     </PackageReference>
     <PackageReference Include="SonarAnalyzer.CSharp">
-      <Version>6.7.0.4267</Version>
+      <Version>6.8.2.4717</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
