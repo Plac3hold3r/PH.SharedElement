@@ -2,7 +2,7 @@
 using MvvmCross.Core.ViewModels;
 using System.Collections.Generic;
 
-namespace SharedElement.Official.Droid.Views.Interfaces
+namespace SharedElement.Official.Droid.Views
 {
     public interface IMvxAndroidSharedElements
     {

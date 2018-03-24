@@ -11,7 +11,6 @@ using MvvmCross.Droid.Views;
 using MvvmCross.Droid.Views.Attributes;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Logging;
-using SharedElement.Official.Droid.Views.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Reflection;

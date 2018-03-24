@@ -5,7 +5,6 @@ using Android.Views;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Support.V7.AppCompat;
 using SharedElement.Official.Core.ViewModels;
-using SharedElement.Official.Droid.Views.Interfaces;
 using System.Collections.Generic;
 
 namespace SharedElement.Official.Droid.Views
