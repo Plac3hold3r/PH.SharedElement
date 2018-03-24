@@ -4,7 +4,7 @@ using Android.Views;
 
 namespace SharedElement.Official.Droid.Views
 {
-    public static class SharedElementsBundleExtensions
+    public static class SharedElementsExtensions
     {
         /// <summary>
         /// Gets the identifier and transition name pairs.
