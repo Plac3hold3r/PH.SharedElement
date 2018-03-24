@@ -1,21 +1,45 @@
 ﻿using Android.App;
 using Android.OS;
 using Android.Support.V7.Widget;
-using MvvmCross.Core.Views;
+using Android.Views;
+using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Support.V7.AppCompat;
-using MvvmCross.Droid.Views.Attributes;
 using SharedElement.Official.Core.ViewModels;
+using System.Collections.Generic;
 
 namespace SharedElement.Official.Droid.Views
 {
     [Activity(
         Theme = "@style/AppTheme",
         Name = DroidConstants.SharedElement_Views_Namespace + nameof(MainActivity))]
-    public class MainActivity : MvxAppCompatActivity<MainViewModel>, IMvxOverridePresentationAttribute
+    public class MainActivity : MvxAppCompatActivity<MainViewModel>, IMvxAndroidSharedElements
     {
-        public MvxBasePresentationAttribute PresentationAttribute()
+        public IDictionary<string, View> FetchSharedElementsToAnimate(MvxViewModelRequest request)
         {
-            return new MvxActivityPresentationAttribute();
+            IDictionary<string, View> sharedElements = new Dictionary<string, View>();
+
+            KeyValuePair<string, View>? iconAnim = CreateSharedElementPair(Resource.String.transition_list_item_icon);
+            if (iconAnim != null)
+                sharedElements.Add(iconAnim.GetValueOrDefault());
+
+            KeyValuePair<string, View>? nameAnim = CreateSharedElementPair(Resource.String.transition_list_item_name);
+            if (nameAnim != null)
+                sharedElements.Add(nameAnim.GetValueOrDefault());
+
+            return sharedElements;
+        }
+
+        private KeyValuePair<string, View>? CreateSharedElementPair(int tagStringResourceId)
+        {
+            var controlTag = Resources.GetString(tagStringResourceId);
+            View control = FindViewById(Android.Resource.Id.Content).FindViewWithTag(controlTag);
+            if (control != null)
+            {
+                control.Tag = null;
+                return new KeyValuePair<string, View>(controlTag, control);
+            }
+
+            return null;
         }
 
         protected override void OnCreate(Bundle bundle)

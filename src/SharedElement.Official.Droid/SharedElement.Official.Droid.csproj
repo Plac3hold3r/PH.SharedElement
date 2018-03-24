@@ -17,7 +17,7 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -33,6 +33,7 @@
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
     <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <DocumentationFile>bin\Debug\SharedElement.Official.Droid.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -64,8 +65,11 @@
     <Compile Include="Views\Activities\DetailsActivity.cs" />
     <Compile Include="Views\Activities\MainActivity.cs" />
     <Compile Include="Views\Activities\SplashActivity.cs" />
+    <Compile Include="Views\SharedElementsBundleExtensions.cs" />
     <Compile Include="Views\Fragments\DetailFragment.cs" />
     <Compile Include="Views\Fragments\ListFragment.cs" />
+    <Compile Include="Views\IMvxAndroidSharedElements.cs" />
+    <Compile Include="Views\SharedElementCompatViewPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -75,22 +79,22 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MvvmCross">
-      <Version>5.6.2</Version>
+      <Version>5.7.0</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.CodeAnalysis">
-      <Version>5.6.2</Version>
+      <Version>5.7.0</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.Droid.Support.Design">
-      <Version>5.6.2</Version>
+      <Version>5.7.0</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.Droid.Support.V7.AppCompat">
-      <Version>5.6.2</Version>
+      <Version>5.7.0</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.Droid.Support.V7.RecyclerView">
-      <Version>5.6.2</Version>
+      <Version>5.7.0</Version>
     </PackageReference>
     <PackageReference Include="SonarAnalyzer.CSharp">
-      <Version>6.7.0.4267</Version>
+      <Version>6.8.2.4717</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

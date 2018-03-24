@@ -15,7 +15,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -133,7 +133,7 @@
       <Version>5.1.1</Version>
     </PackageReference>
     <PackageReference Include="SonarAnalyzer.CSharp">
-      <Version>6.7.0.4267</Version>
+      <Version>6.8.2.4717</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
