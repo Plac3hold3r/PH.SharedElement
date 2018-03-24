@@ -1,11 +1,16 @@
-﻿using Android.OS;
+﻿using System.Collections.Generic;
+using Android.OS;
 using Android.Views;
-using System.Collections.Generic;
 
 namespace SharedElement.Official.Droid.Views
 {
     public static class SharedElementsBundleExtensions
     {
+        /// <summary>
+        /// Gets the identifier and transition name pairs.
+        /// </summary>
+        /// <param name="bundle">A <see cref="Bundle"/> containing shared element metadata passed to the fragment or activity.</param>
+        /// <returns>An <see cref="IDictionary{key, value}"/> containing the identifier key and transition name value.</returns>
         public static IDictionary<string, string> GetSharedElementTransitionNames(this Bundle bundle)
         {
             IDictionary<string, string> sharedElements = new Dictionary<string, string>();
@@ -20,6 +25,11 @@ namespace SharedElement.Official.Droid.Views
             return sharedElements;
         }
 
+        /// <summary>
+        /// Sets the corresponding views transition name, based on view tags.
+        /// </summary>
+        /// <param name="bundle">A <see cref="Bundle"/> containing shared element metadata passed to the fragment or activity.</param>
+        /// <param name="view">The <see cref="View"/> to search for the tag.</param>
         public static void SetSharedElementsByTag(this Bundle bundle, View view)
         {
             var transitions = bundle.GetString(DroidConstants.Transition_Name_Key);
@@ -32,6 +42,11 @@ namespace SharedElement.Official.Droid.Views
             }
         }
 
+        /// <summary>
+        /// Sets the corresponding views transition name, based on view identifier.
+        /// </summary>
+        /// <param name="bundle">A <see cref="Bundle"/> containing shared element metadata passed to the fragment or activity.</param>
+        /// <param name="view">The <see cref="View"/> to search for the identifier.</param>
         public static void SetSharedElementsById(this Bundle bundle, View view)
         {
             var transitions = bundle.GetString(DroidConstants.Transition_Name_Key);
@@ -44,6 +59,11 @@ namespace SharedElement.Official.Droid.Views
             }
         }
 
+        /// <summary>
+        /// Sets the <see cref="View.TransitionName"/> with platform support checks
+        /// </summary>
+        /// <param name="view">The <see cref="View"/> to use.</param>
+        /// <param name="transitionName">The name for the transition.</param>
         public static void SetTransitionNameSupport(this View view, string transitionName)
         {
             if (Build.VERSION.SdkInt >= BuildVersionCodes.Lollipop)

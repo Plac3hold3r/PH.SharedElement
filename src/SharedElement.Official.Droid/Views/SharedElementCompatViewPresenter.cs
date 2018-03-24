@@ -1,4 +1,7 @@
-﻿using Android.Content;
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
+using Android.Content;
 using Android.OS;
 using Android.Support.V4.App;
 using Android.Support.V4.Util;
@@ -11,9 +14,6 @@ using MvvmCross.Droid.Views;
 using MvvmCross.Droid.Views.Attributes;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Logging;
-using System;
-using System.Collections.Generic;
-using System.Reflection;
 
 namespace SharedElement.Official.Droid.Views
 {
