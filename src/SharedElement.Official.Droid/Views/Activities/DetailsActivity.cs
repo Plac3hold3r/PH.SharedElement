@@ -1,6 +1,5 @@
 ﻿using Android.App;
 using Android.OS;
-using Android.Support.V4.View;
 using Android.Support.V7.Widget;
 using Android.Views;
 using MvvmCross.Droid.Support.V7.AppCompat;
@@ -23,15 +22,7 @@ namespace SharedElement.Official.Droid.Views
             SetTitle(Resource.String.app_project_name);
 
             Bundle extras = Intent.Extras;
-            var transitions = extras.GetString(DroidConstants.Transition_Name_Key);
-
-            foreach (var transition in transitions.Split('|'))
-            {
-                string[] transitionDetails = transition.Split(':');
-
-                View viewToAnimate = FindViewById(Android.Resource.Id.Content).FindViewWithTag(transitionDetails[0]);
-                ViewCompat.SetTransitionName(viewToAnimate, transitionDetails[1]);
-            }
+            extras.SetSharedElementsByTag(FindViewById(Android.Resource.Id.Content));
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)

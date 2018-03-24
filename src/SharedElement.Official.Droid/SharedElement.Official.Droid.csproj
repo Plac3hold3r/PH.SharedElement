@@ -64,6 +64,7 @@
     <Compile Include="Views\Activities\DetailsActivity.cs" />
     <Compile Include="Views\Activities\MainActivity.cs" />
     <Compile Include="Views\Activities\SplashActivity.cs" />
+    <Compile Include="Views\SharedElementsBundleExtensions.cs" />
     <Compile Include="Views\Fragments\DetailFragment.cs" />
     <Compile Include="Views\Fragments\ListFragment.cs" />
     <Compile Include="Views\IMvxAndroidSharedElements.cs" />

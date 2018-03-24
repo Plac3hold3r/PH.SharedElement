@@ -1,6 +1,5 @@
 ﻿using Android.OS;
 using Android.Runtime;
-using Android.Support.V4.View;
 using Android.Support.V7.App;
 using Android.Transitions;
 using Android.Views;
@@ -30,15 +29,7 @@ namespace SharedElement.Official.Droid.Views
             base.OnCreateView(inflater, container, savedInstanceState);
 
             View view = this.BindingInflate(Resource.Layout.fragment_details, null);
-            var transitions = Arguments.GetString(DroidConstants.Transition_Name_Key);
-
-            foreach (var transition in transitions.Split('|'))
-            {
-                string[] transitionDetails = transition.Split(':');
-
-                View viewToAnimate = view.FindViewWithTag(transitionDetails[0]);
-                ViewCompat.SetTransitionName(viewToAnimate, transitionDetails[1]);
-            }
+            Arguments.SetSharedElementsByTag(view);
 
             return view;
         }
