@@ -53,7 +53,7 @@ namespace SharedElement.Official.Droid.Views
             SetTitle(Resource.String.app_project_name);
 
             if (bundle is null)
-                ViewModel.Test();
+                ViewModel.ShowListView();
         }
     }
 }

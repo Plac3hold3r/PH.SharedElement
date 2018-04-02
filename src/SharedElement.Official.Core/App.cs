@@ -6,6 +6,6 @@ namespace SharedElement.Official.Core
     public class App : MvxApplication
     {
         public override void Initialize()
-            => RegisterAppStart<MainViewModel>();
+            => RegisterAppStart<ListViewModel>();
     }
 }

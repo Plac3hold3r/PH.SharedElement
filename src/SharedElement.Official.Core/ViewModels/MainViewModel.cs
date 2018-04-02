@@ -12,7 +12,7 @@ namespace SharedElement.Official.Core.ViewModels
             _navigationService = navigationService;
         }
 
-        public void Test()
+        public void ShowListView()
         {
             _navigationService.Navigate<ListViewModel>();
         }

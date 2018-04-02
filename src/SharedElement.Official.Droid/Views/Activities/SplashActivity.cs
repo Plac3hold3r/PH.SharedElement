@@ -1,6 +1,6 @@
 using Android.App;
 using Android.Content.PM;
-using MvvmCross.Droid.Support.V7.AppCompat;
+using MvvmCross.Platforms.Android.Views;
 
 namespace SharedElement.Official.Droid.Views
 {
@@ -13,7 +13,7 @@ namespace SharedElement.Official.Droid.Views
         RoundIcon = "@mipmap/ic_round_launcher",
         ScreenOrientation = ScreenOrientation.Portrait,
         Name = DroidConstants.SharedElement_Views_Namespace + nameof(SplashActivity))]
-    public class SplashActivity : MvxSplashScreenAppCompatActivity
+    public class SplashActivity : MvxSplashScreenActivity
     {
         public SplashActivity() : base(Resource.Layout.activity_splash_screen)
         {
