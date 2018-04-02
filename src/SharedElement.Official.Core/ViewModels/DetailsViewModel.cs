@@ -1,4 +1,4 @@
-﻿using MvvmCross.Core.ViewModels;
+﻿using MvvmCross.ViewModels;
 using SharedElement.Official.Core.Navigation;
 
 namespace SharedElement.Official.Core.ViewModels

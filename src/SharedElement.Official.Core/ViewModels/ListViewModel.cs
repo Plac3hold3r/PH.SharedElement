@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
-using MvvmCross.Core.Navigation;
-using MvvmCross.Core.ViewModels;
+using MvvmCross.Navigation;
+using MvvmCross.ViewModels;
 using SharedElement.Official.Core.Navigation;
 
 namespace SharedElement.Official.Core.ViewModels
