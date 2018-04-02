@@ -1,4 +1,4 @@
-﻿namespace SharedElement.Official.Core
+﻿namespace SharedElement.Presenter.Core
 {
     public static class SharedConstants
     {

@@ -1,4 +1,4 @@
-﻿namespace SharedElement.Official.Core.Navigation
+﻿namespace SharedElement.Presenter.Core.Navigation
 {
     public class GoToDetailsParameters
     {

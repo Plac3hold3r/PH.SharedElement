@@ -1,4 +1,4 @@
-﻿namespace SharedElement.Official.Core.ViewModels
+﻿namespace SharedElement.Presenter.Core.ViewModels
 {
     public class ListItemViewModel
     {

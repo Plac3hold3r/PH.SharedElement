@@ -1,7 +1,7 @@
 using MvvmCross.Core.ViewModels;
-using SharedElement.Official.Core.ViewModels;
+using SharedElement.Presenter.Core.ViewModels;
 
-namespace SharedElement.Official.Core
+namespace SharedElement.Presenter.Core
 {
     public class App : MvxApplication
     {

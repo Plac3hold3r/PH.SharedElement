@@ -2,7 +2,7 @@
 using Android.Views;
 using MvvmCross.Core.ViewModels;
 
-namespace SharedElement.Official.Droid.Views
+namespace SharedElement.Presenter.Droid.Views
 {
     /// <summary>
     /// Used by Android presenters to check if they need to include shared element animations on navigation

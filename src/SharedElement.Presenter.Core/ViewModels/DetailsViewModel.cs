@@ -1,7 +1,7 @@
 ﻿using MvvmCross.Core.ViewModels;
-using SharedElement.Official.Core.Navigation;
+using SharedElement.Presenter.Core.Navigation;
 
-namespace SharedElement.Official.Core.ViewModels
+namespace SharedElement.Presenter.Core.ViewModels
 {
     public class DetailsViewModel : MvxViewModel<GoToDetailsParameters>
     {

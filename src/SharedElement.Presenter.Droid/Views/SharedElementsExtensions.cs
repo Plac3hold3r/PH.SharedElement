@@ -2,7 +2,7 @@
 using Android.OS;
 using Android.Views;
 
-namespace SharedElement.Official.Droid.Views
+namespace SharedElement.Presenter.Droid.Views
 {
     public static class SharedElementsExtensions
     {

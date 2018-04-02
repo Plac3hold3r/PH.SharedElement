@@ -15,7 +15,7 @@ using MvvmCross.Droid.Views.Attributes;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Logging;
 
-namespace SharedElement.Official.Droid.Views
+namespace SharedElement.Presenter.Droid.Views
 {
     public class SharedElementCompatViewPresenter : MvxAppCompatViewPresenter
     {

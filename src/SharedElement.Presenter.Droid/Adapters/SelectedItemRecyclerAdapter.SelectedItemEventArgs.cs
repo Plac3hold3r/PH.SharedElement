@@ -1,7 +1,7 @@
 ﻿using System;
 using Android.Views;
 
-namespace SharedElement.Official.Droid.Adapters
+namespace SharedElement.Presenter.Droid.Adapters
 {
     public partial class SelectedItemRecyclerAdapter
     {

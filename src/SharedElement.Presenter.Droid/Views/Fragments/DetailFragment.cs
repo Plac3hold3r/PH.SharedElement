@@ -6,9 +6,9 @@ using Android.Views;
 using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V4;
 using MvvmCross.Droid.Views.Attributes;
-using SharedElement.Official.Core.ViewModels;
+using SharedElement.Presenter.Core.ViewModels;
 
-namespace SharedElement.Official.Droid.Views
+namespace SharedElement.Presenter.Droid.Views
 {
     [MvxFragmentPresentation(typeof(MainViewModel), Resource.Id.content_frame, true)]
     [Register(DroidConstants.SharedElement_Views_Namespace + nameof(DetailFragment))]
