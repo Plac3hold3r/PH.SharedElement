@@ -49,6 +49,7 @@
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mono.Android.Export" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -62,14 +63,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Setup.cs" />
+    <Compile Include="SharedElementCompatViewPresenter.cs" />
     <Compile Include="Views\Activities\DetailsActivity.cs" />
     <Compile Include="Views\Activities\MainActivity.cs" />
     <Compile Include="Views\Activities\SplashActivity.cs" />
-    <Compile Include="Views\SharedElementsExtensions.cs" />
     <Compile Include="Views\Fragments\DetailFragment.cs" />
     <Compile Include="Views\Fragments\ListFragment.cs" />
-    <Compile Include="Views\IMvxAndroidSharedElements.cs" />
-    <Compile Include="Views\SharedElementCompatViewPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -178,7 +177,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharedElement.Official.Core\SharedElement.Official.Core.csproj">
-      <Project>{dc149eb8-9e4a-4d31-91a4-195287af0a89}</Project>
+      <Project>{ade63cae-42fe-4c8a-9122-742906da0bb9}</Project>
       <Name>SharedElement.Official.Core</Name>
     </ProjectReference>
   </ItemGroup>

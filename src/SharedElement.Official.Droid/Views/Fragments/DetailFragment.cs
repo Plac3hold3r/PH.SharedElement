@@ -3,9 +3,10 @@ using Android.Runtime;
 using Android.Support.V7.App;
 using Android.Transitions;
 using Android.Views;
-using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V4;
-using MvvmCross.Droid.Views.Attributes;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
+using MvvmCross.Platforms.Android.Presenters.Attributes;
+using MvvmCross.Platforms.Android.Views;
 using SharedElement.Official.Core.ViewModels;
 
 namespace SharedElement.Official.Droid.Views

@@ -3,6 +3,7 @@ using Android.OS;
 using Android.Support.V7.Widget;
 using Android.Views;
 using MvvmCross.Droid.Support.V7.AppCompat;
+using MvvmCross.Platforms.Android.Views;
 using SharedElement.Official.Core.ViewModels;
 
 namespace SharedElement.Official.Droid.Views

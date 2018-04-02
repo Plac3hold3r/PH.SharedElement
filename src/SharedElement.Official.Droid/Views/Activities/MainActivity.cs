@@ -1,11 +1,13 @@
-﻿using Android.App;
+﻿using System.Collections.Generic;
+using Android.App;
 using Android.OS;
 using Android.Support.V7.Widget;
 using Android.Views;
-using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Support.V7.AppCompat;
+using MvvmCross.Platforms.Android.Views;
+using MvvmCross.Presenters.Attributes;
+using MvvmCross.ViewModels;
 using SharedElement.Official.Core.ViewModels;
-using System.Collections.Generic;
 
 namespace SharedElement.Official.Droid.Views
 {
@@ -14,7 +16,7 @@ namespace SharedElement.Official.Droid.Views
         Name = DroidConstants.SharedElement_Views_Namespace + nameof(MainActivity))]
     public class MainActivity : MvxAppCompatActivity<MainViewModel>, IMvxAndroidSharedElements
     {
-        public IDictionary<string, View> FetchSharedElementsToAnimate(MvxViewModelRequest request)
+        public IDictionary<string, View> FetchSharedElementsToAnimate(MvxBasePresentationAttribute attribute, MvxViewModelRequest request)
         {
             IDictionary<string, View> sharedElements = new Dictionary<string, View>();
 
@@ -49,6 +51,9 @@ namespace SharedElement.Official.Droid.Views
             SetContentView(Resource.Layout.activity_main);
             SetSupportActionBar(FindViewById<Toolbar>(Resource.Id.toolbar));
             SetTitle(Resource.String.app_project_name);
+
+            if (bundle is null)
+                ViewModel.Test();
         }
     }
 }
