@@ -1,7 +1,7 @@
 using MvvmCross.Core.ViewModels;
-using SharedElement.Custom.Core.ViewModels;
+using SharedElement.Activity.Core.ViewModels;
 
-namespace SharedElement.Custom.Core
+namespace SharedElement.Activity.Core
 {
     public class App : MvxApplication
     {

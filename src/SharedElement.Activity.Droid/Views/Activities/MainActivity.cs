@@ -14,10 +14,10 @@ using MvvmCross.Droid.Support.V7.AppCompat;
 using MvvmCross.Droid.Views;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Exceptions;
-using SharedElement.Custom.Core;
-using SharedElement.Custom.Core.ViewModels;
+using SharedElement.Activity.Core;
+using SharedElement.Activity.Core.ViewModels;
 
-namespace SharedElement.Custom.Droid.Views
+namespace SharedElement.Activity.Droid.Views
 {
     [Android.App.Activity(
         Theme = "@style/AppTheme",

@@ -8,10 +8,10 @@ using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Shared.Attributes;
 using MvvmCross.Droid.Support.V4;
 using MvvmCross.Droid.Support.V7.RecyclerView;
-using SharedElement.Custom.Core.ViewModels;
-using SharedElement.Custom.Droid.Adapters;
+using SharedElement.Activity.Core.ViewModels;
+using SharedElement.Activity.Droid.Adapters;
 
-namespace SharedElement.Custom.Droid.Views
+namespace SharedElement.Activity.Droid.Views
 {
     [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame)]
     [Register(DroidConstants.SharedElement_Views_Namespace + nameof(ListFragment))]

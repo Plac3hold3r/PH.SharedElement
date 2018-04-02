@@ -3,8 +3,8 @@ using Android.Content;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Support.V7.AppCompat;
 using MvvmCross.Droid.Views;
-using SharedElement.Custom.Core;
-using SharedElement.Custom.Droid.Views;
+using SharedElement.Activity.Core;
+using SharedElement.Activity.Droid.Views;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: Application(Debuggable = false, Label = "@string/app_name", Description = "@string/app_description")]
 #endif
 
-namespace SharedElement.Custom.Droid
+namespace SharedElement.Activity.Droid
 {
     public class Setup : MvxAppCompatSetup
     {

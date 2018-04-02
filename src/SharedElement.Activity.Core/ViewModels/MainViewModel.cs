@@ -1,6 +1,6 @@
 ﻿using MvvmCross.Core.ViewModels;
 
-namespace SharedElement.Custom.Core.ViewModels
+namespace SharedElement.Activity.Core.ViewModels
 {
     public class MainViewModel : MvxViewModel
     {

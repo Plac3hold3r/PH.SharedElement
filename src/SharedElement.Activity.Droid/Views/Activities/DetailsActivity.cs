@@ -4,9 +4,9 @@ using Android.Support.V4.View;
 using Android.Support.V7.Widget;
 using Android.Views;
 using MvvmCross.Droid.Support.V7.AppCompat;
-using SharedElement.Custom.Core.ViewModels;
+using SharedElement.Activity.Core.ViewModels;
 
-namespace SharedElement.Custom.Droid.Views
+namespace SharedElement.Activity.Droid.Views
 {
     [Activity(
         Theme = "@style/AppTheme",

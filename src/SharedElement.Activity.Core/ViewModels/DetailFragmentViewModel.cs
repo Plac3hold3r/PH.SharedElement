@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
-using SharedElement.Custom.Core.Navigation;
+using SharedElement.Activity.Core.Navigation;
 
-namespace SharedElement.Custom.Core.ViewModels
+namespace SharedElement.Activity.Core.ViewModels
 {
     public class DetailFragmentViewModel : MvxViewModel<GoToDetailsParameters>
     {

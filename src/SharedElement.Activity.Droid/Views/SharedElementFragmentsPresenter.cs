@@ -9,9 +9,9 @@ using Android.Views;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Shared.Presenter;
 using MvvmCross.Platform;
-using SharedElement.Custom.Core;
+using SharedElement.Activity.Core;
 
-namespace SharedElement.Custom.Droid.Views
+namespace SharedElement.Activity.Droid.Views
 {
     public class SharedElementFragmentsPresenter : MvxFragmentsPresenter
     {

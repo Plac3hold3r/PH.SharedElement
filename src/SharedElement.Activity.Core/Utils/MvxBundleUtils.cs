@@ -1,7 +1,7 @@
 ﻿using MvvmCross.Core.ViewModels;
 using System.Collections.Generic;
 
-namespace SharedElement.Custom.Core.Utils
+namespace SharedElement.Activity.Core.Utils
 {
     public static class MvxBundleUtils
     {

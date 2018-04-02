@@ -3,7 +3,7 @@ using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V7.RecyclerView;
 using System;
 
-namespace SharedElement.Custom.Droid.Adapters
+namespace SharedElement.Activity.Droid.Adapters
 {
     public partial class SelectedItemRecyclerAdapter
     {

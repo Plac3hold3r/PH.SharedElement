@@ -1,4 +1,4 @@
-﻿namespace SharedElement.Custom.Core
+﻿namespace SharedElement.Activity.Core
 {
     public static class SharedConstants
     {

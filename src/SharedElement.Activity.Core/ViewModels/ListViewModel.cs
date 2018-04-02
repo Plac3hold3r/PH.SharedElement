@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
 using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
-using SharedElement.Custom.Core.Navigation;
-using SharedElement.Custom.Core.Utils;
+using SharedElement.Activity.Core.Navigation;
+using SharedElement.Activity.Core.Utils;
 
-namespace SharedElement.Custom.Core.ViewModels
+namespace SharedElement.Activity.Core.ViewModels
 {
     public class ListViewModel : MvxViewModel
     {

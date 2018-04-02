@@ -2,7 +2,7 @@ using Android.App;
 using Android.Content.PM;
 using MvvmCross.Droid.Support.V7.AppCompat;
 
-namespace SharedElement.Custom.Droid.Views
+namespace SharedElement.Activity.Droid.Views
 {
     [Activity(
         NoHistory = true,

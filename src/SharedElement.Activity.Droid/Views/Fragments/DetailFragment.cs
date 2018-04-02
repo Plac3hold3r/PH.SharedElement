@@ -7,9 +7,9 @@ using Android.Views;
 using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Shared.Attributes;
 using MvvmCross.Droid.Support.V4;
-using SharedElement.Custom.Core.ViewModels;
+using SharedElement.Activity.Core.ViewModels;
 
-namespace SharedElement.Custom.Droid.Views
+namespace SharedElement.Activity.Droid.Views
 {
     [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame, true)]
     [Register(DroidConstants.SharedElement_Views_Namespace + nameof(DetailFragment))]
