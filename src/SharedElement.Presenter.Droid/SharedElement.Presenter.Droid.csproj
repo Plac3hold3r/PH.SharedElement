@@ -177,9 +177,9 @@
     <AndroidResource Include="Resources\values-v21\styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SharedElement.Official.Core\SharedElement.Official.Core.csproj">
+    <ProjectReference Include="..\SharedElement.Presenter.Core\SharedElement.Presenter.Core.csproj">
       <Project>{dc149eb8-9e4a-4d31-91a4-195287af0a89}</Project>
-      <Name>SharedElement.Official.Core</Name>
+      <Name>SharedElement.Presenter.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

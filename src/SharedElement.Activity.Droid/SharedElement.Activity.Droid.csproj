@@ -139,7 +139,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SharedElement.Activity.Core\SharedElement.Activity.Core.csproj">
       <Project>{412bdabe-4be9-4ee3-a098-c1217bbb173e}</Project>
-      <Name>SharedElement.Custom.Core</Name>
+      <Name>SharedElement.Activity.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
